@@ -13,8 +13,8 @@
 		C8365E141BA935590013CBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8365E131BA935590013CBE2 /* Assets.xcassets */; };
 		C8365E171BA935590013CBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8365E151BA935590013CBE2 /* LaunchScreen.storyboard */; };
 		C8365E221BA935590013CBE2 /* PtraceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8365E211BA935590013CBE2 /* PtraceDemoTests.swift */; };
-		C8365E2D1BA942A70013CBE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8365E2C1BA942A70013CBE2 /* main.swift */; settings = {ASSET_TAGS = (); }; };
-		C8365E301BA94B1C0013CBE2 /* DenyPtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = C8365E2F1BA94B1C0013CBE2 /* DenyPtrace.c */; settings = {ASSET_TAGS = (); }; };
+		C8365E2D1BA942A70013CBE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8365E2C1BA942A70013CBE2 /* main.swift */; };
+		C8365E301BA94B1C0013CBE2 /* DenyPtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = C8365E2F1BA94B1C0013CBE2 /* DenyPtrace.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,9 +154,12 @@
 				TargetAttributes = {
 					C8365E081BA935590013CBE2 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 896GJLNPY9;
+						LastSwiftMigration = 0820;
 					};
 					C8365E1C1BA935590013CBE2 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = C8365E081BA935590013CBE2;
 					};
 				};
@@ -336,12 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 896GJLNPY9;
 				INFOPLIST_FILE = PtraceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = billwang1990.PtraceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PtraceDemo/PtraceDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -350,11 +355,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 896GJLNPY9;
 				INFOPLIST_FILE = PtraceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = billwang1990.PtraceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PtraceDemo/PtraceDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -366,6 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = billwang1990.PtraceDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PtraceDemo.app/PtraceDemo";
 			};
 			name = Debug;
@@ -378,6 +386,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = billwang1990.PtraceDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PtraceDemo.app/PtraceDemo";
 			};
 			name = Release;
@@ -401,6 +410,7 @@
 				C8365E281BA935590013CBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8365E291BA935590013CBE2 /* Build configuration list for PBXNativeTarget "PtraceDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +419,7 @@
 				C8365E2B1BA935590013CBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
