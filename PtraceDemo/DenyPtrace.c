@@ -21,14 +21,17 @@ typedef int (*ptrace_ptr_t)(int _request, pid_t _pid, caddr_t _addr, int _data);
 
 void disable_gdb() {
     void* handle = dlopen(0, RTLD_GLOBAL | RTLD_NOW);
-    //Obsficate 'ptrace'string
     char str[  ] = {
         A('p'), A('t'), A('r'), A('a'), A('c'),
         A('e'), 0
     };
     UNHIDE_STR(str);
     char string[6];
-    strcpy(string, str);
+    int i;
+    for(i=0;i<6;i++){
+        string[i]=str[i];
+    }
+    string[i]='\0';
     ptrace_ptr_t ptrace_ptr = dlsym(handle, string);
     ptrace_ptr(PT_DENY_ATTACH, 0, 0, 0);
     dlclose(handle);
